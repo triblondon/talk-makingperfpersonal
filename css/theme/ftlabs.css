@@ -151,7 +151,7 @@ body {
   color: #FECB00; }
 .reveal .slides section.logo-title {
   text-align: left;
-  background: url(ftlabs_images/labs-logo.svg) 0 15px no-repeat;
+  background: url(/css/theme/ftlabs_images/labs-logo.svg) 0 15px no-repeat;
   background-size: 15%;
   padding-top: 0; }
   .reveal .slides section.logo-title > * {
@@ -185,6 +185,12 @@ body {
   .reveal .slides section.big-quote blockquote strong {
     color: #FF0;
     text-shadow: 2px 2px 7px #000; }
+.reveal .slides section.big-quote cite {
+  color: #FECB00;
+  text-align: right;
+  margin-top: 1em;
+  display: block;
+  text-shadow: 0 0 6px black; }
 .reveal .slides .row {
   display: table;
   text-align: left;
@@ -267,3 +273,26 @@ body {
     border-bottom: 5px solid #D3CBC1; }
 .reveal .slides table.centered-content td {
   text-align: center; }
+.reveal .slides ul.steplist {
+  list-style-type: none;
+  text-align: center; }
+  .reveal .slides ul.steplist li {
+    opacity: 0;
+    transition: none;
+    font-size: 160%;
+    line-height: 150%; }
+.reveal .slides ul.steplist.active li {
+  opacity: 1;
+  transition: opacity 0.7s; }
+.reveal .slides ul.steplist.active li:nth-child(1) {
+  transition-delay: 0.4s; }
+.reveal .slides ul.steplist.active li:nth-child(2) {
+  transition-delay: 0.8s; }
+.reveal .slides ul.steplist.active li:nth-child(3) {
+  transition-delay: 1.2s; }
+.reveal .slides ul.steplist.active li:nth-child(4) {
+  transition-delay: 1.6s; }
+.reveal .slides ul.steplist.active li:nth-child(5) {
+  transition-delay: 2s; }
+.reveal .slides ul.steplist.active li:nth-child(6) {
+  transition-delay: 2.4s; }

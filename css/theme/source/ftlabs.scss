@@ -105,6 +105,13 @@ $linkColorHover: lighten( $linkColor, 20% );
 				text-shadow: 2px 2px 7px #000;
 			}
 		}
+		cite {
+			color: #FECB00;
+			text-align: right;
+			margin-top: 1em;
+			display: block;
+			text-shadow: 0 0 6px black;
+		}
 	}
 	.row {
 		display:table;
@@ -219,6 +226,40 @@ $linkColorHover: lighten( $linkColor, 20% );
 	table.centered-content {
 		td {
 			text-align: center;
+		}
+	}
+	ul.steplist {
+		list-style-type: none;
+		text-align: center;
+		li {
+			opacity: 0;
+			transition: none;
+			font-size: 160%;
+			line-height: 150%;
+		}
+	}
+	ul.steplist.active {
+		li {
+			opacity: 1;
+			transition: opacity 0.7s;
+		}
+		li:nth-child(1) {
+			transition-delay: 0.4s;
+		}
+		li:nth-child(2) {
+			transition-delay: 0.8s;
+		}
+		li:nth-child(3) {
+			transition-delay: 1.2s;
+		}
+		li:nth-child(4) {
+			transition-delay: 1.6s;
+		}
+		li:nth-child(5) {
+			transition-delay: 2s;
+		}
+		li:nth-child(6) {
+			transition-delay: 2.4s;
 		}
 	}
 }
